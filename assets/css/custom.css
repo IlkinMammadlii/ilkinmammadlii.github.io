@@ -1,0 +1,264 @@
+/* -----------------------------------------------------------
+   CUSTOM CSS — ILKIN MAMMADLI PORTFOLIO
+   Pastel / Soft UI Theme + Full Lab Requirement Coverage
+----------------------------------------------------------- */
+
+
+/* ===========================================
+   1️⃣ TYPOGRAPHY SYSTEM
+=========================================== */
+
+body {
+  font-family: "Quicksand", "Raleway", sans-serif;
+  color: #333;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #2b2b2b;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #555;
+}
+
+
+/* ===========================================
+   2️⃣ INTERACTIVE ELEMENTS — LINKS & BUTTONS
+=========================================== */
+
+a {
+  color: #6a73ff;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+a:hover {
+  color: #4b54d6;
+}
+
+a:active {
+  color: #3136a1;
+}
+
+/* Ghost button override */
+.btn-ghost, 
+.btn.btn-ghost {
+  background: #ffffff;
+  border: 2px solid #d6d6ff;
+  padding: 10px 22px;
+  border-radius: 14px;
+  color: #4b4bd6;
+  transition: 0.3s ease;
+}
+
+.btn-ghost:hover {
+  background: #eef0ff;
+  border-color: #babdff;
+}
+
+.btn-ghost:active {
+  background: #d5d8ff;
+  border-color: #a7abff;
+}
+
+/* Link underline button */
+.link-underline {
+  position: relative;
+}
+
+.link-underline:hover {
+  color: #3d44c7;
+}
+
+
+/* ===========================================
+   3️⃣ SPACING SCALE & SURFACES
+   (Applied to 3 sections: hero, about, portfolio)
+=========================================== */
+
+/* Spacing scale */
+.section {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+/* Soft UI surfaces */
+.soft-card,
+.service-item,
+.portfolio-card,
+.skill-item,
+.timeline-item,
+.fact-pill,
+.media-block {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.06),
+              -6px -6px 15px #ffffff;
+}
+
+/* Hero surface softening */
+.hero .intro {
+  padding: 30px;
+  border-radius: 18px;
+  background: #ffffffaa;
+  backdrop-filter: blur(6px);
+}
+
+/* About card enhancements */
+.about .intro-content {
+  padding: 24px 15px;
+  border-radius: 14px;
+}
+
+/* Portfolio cards pastel styling */
+.portfolio-card {
+  border: 1px solid #f0f0ff;
+  transition: 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+
+
+/* ===========================================
+   4️⃣ COMPONENT RESTYLES
+   NAVBAR + BACK TO TOP BUTTON
+=========================================== */
+
+/* ---------- NAVBAR ---------- */
+
+#header {
+  background: #ffffffcc;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+#navmenu ul li a {
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+#navmenu ul li a:hover {
+  background: #eef0ff;
+  color: #434ad1;
+}
+
+#navmenu ul li a.active {
+  background: #d7dbff;
+  color: #353bb8;
+}
+
+/* ---------- BACK-TO-TOP ---------- */
+
+#scroll-top {
+  background: #ffffff;
+  border: 2px solid #c7c7ff;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  transition: 0.25s;
+}
+
+#scroll-top i {
+  color: #4b5bff;
+}
+
+#scroll-top:hover {
+  background: #eef0ff;
+  border-color: #a8acff;
+}
+
+#scroll-top:active {
+  background: #dcdfff;
+}
+
+
+/* ===========================================
+   EXTRA: FORM INPUT STYLING
+=========================================== */
+
+.form-input {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1.5px solid #dcdcff;
+  transition: 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #6d76ff;
+  box-shadow: 0 0 6px rgba(87, 97, 255, 0.4);
+}
+
+
+/* ===========================================
+   EXTRA: FACT PILLS
+=========================================== */
+
+.fact-pill {
+  padding: 14px;
+  border-radius: 16px;
+  background: #f9f9ff;
+  border: 1px solid #e7e7ff;
+  transition: 0.3s ease;
+}
+
+.fact-pill:hover {
+  background: #eef0ff;
+}
+
+
+/* ===========================================
+   EXTRA: TIMELINE DOT
+=========================================== */
+
+.timeline-item .dot {
+  background: #6666ff;
+  border: 3px solid #dedeff;
+}
+
+
+/* ===========================================
+   EXTRA: SERVICE CARDS
+=========================================== */
+
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+
+/* ===========================================
+   ENSURE EVERYTHING OVERRIDES MAIN.CSS
+=========================================== */
+
+:root {
+  --main-accent: #6b6eff;
+}
